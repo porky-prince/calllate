@@ -1,6 +1,6 @@
 {
-	"name": "calllater",
-	"version": "1.0.1",
+	"name": "calllate",
+	"version": "1.0.3",
 	"description": "Defer a task to execute it asynchronously.",
 	"keywords": [
 		"nexttick",
@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"jest": "^27.3.1"
 	},
-	"repository": "https://github.com/porky-prince/calllater.git",
-	"homepage": "https://github.com/porky-prince/calllater#readme",
-	"bugs": "https://github.com/porky-prince/calllater/issues"
+	"repository": "https://github.com/porky-prince/calllate.git",
+	"homepage": "https://github.com/porky-prince/calllate#readme",
+	"bugs": "https://github.com/porky-prince/calllate/issues"
 }

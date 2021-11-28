@@ -2,7 +2,7 @@
 [![node][node]][node-url]
 [![size][size]][size-url]
 
-# calllater
+# calllate
 
 > Defer a task to execute it asynchronously.
 
@@ -15,13 +15,13 @@
 npm:
 
 ```sh
-$ npm install --save calllater
+$ npm install --save calllate
 ```
 
 yarn:
 
 ```sh
-$ yarn add calllater
+$ yarn add calllate
 ```
 
 ### Global
@@ -29,20 +29,20 @@ $ yarn add calllater
 npm:
 
 ```sh
-$ npm install -g calllater
+$ npm install -g calllate
 ```
 
 yarn:
 
 ```sh
-$ yarn add global calllater
+$ yarn add global calllate
 ```
 
 
 ### Browser
 
 ```html
-<script src="calllater.js"></script>
+<script src="calllate.js"></script>
 ```
 
 ## Support
@@ -53,9 +53,9 @@ $ yarn add global calllater
 #### Using commonjs
 
 ```js
-const callLater = require('calllater');
+const callLate = require('calllate');
 
-callLater(() => {
+callLate(() => {
     // ...
 });
 ```
@@ -63,9 +63,9 @@ callLater(() => {
 #### Using es6 or typescript
 
 ```js
-import callLater from 'calllater';
+import callLate from 'calllate';
 
-callLater(() => {
+callLate(() => {
     // ...
 });
 ```
@@ -74,7 +74,7 @@ callLater(() => {
 
 ```html
 <script>
-    callLater(() => {
+    callLate(() => {
         // ...
     });
 </script>
@@ -84,9 +84,9 @@ callLater(() => {
 
 [MIT © Porky Ke](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/calllater.svg
-[npm-url]: https://npmjs.com/package/calllater
-[node]: https://img.shields.io/node/v/calllater.svg
+[npm]: https://img.shields.io/npm/v/calllate.svg
+[npm-url]: https://npmjs.com/package/calllate
+[node]: https://img.shields.io/node/v/calllate.svg
 [node-url]: https://nodejs.org
-[size]: https://packagephobia.now.sh/badge?p=calllater
-[size-url]: https://packagephobia.now.sh/result?p=calllater
+[size]: https://packagephobia.now.sh/badge?p=calllate
+[size-url]: https://packagephobia.now.sh/result?p=calllate

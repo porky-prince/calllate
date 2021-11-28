@@ -1,8 +1,8 @@
 if (typeof importScripts === 'function') {
 	importScripts('index.js');
-	console.warn('worker callLater test');
+	console.warn('worker callLate test');
 } else {
-	console.warn('callLater test');
+	console.warn('callLate test');
 }
 
 function every(expect, toEqual) {
@@ -27,7 +27,7 @@ testDemo1();
 function testDemo1() {
 	console.log('async');
 	var i = 1;
-	callLater(function () {
+	callLate(function () {
 		i = 2;
 	});
 	test(i, 1);
@@ -37,13 +37,13 @@ function testDemo1() {
 function testDemo2() {
 	console.log('defer parallel');
 	var arr = [];
-	callLater(function () {
+	callLate(function () {
 		arr.push(1);
 	});
-	callLater(function () {
+	callLate(function () {
 		arr.push(2);
 	});
-	callLater(function () {
+	callLate(function () {
 		arr.push(3);
 	});
 	test(arr.length, 0);
@@ -56,11 +56,11 @@ function testDemo2() {
 function testDemo3() {
 	console.log('defer serial');
 	var arr = [];
-	callLater(function () {
+	callLate(function () {
 		arr.push(0);
-		callLater(function () {
+		callLate(function () {
 			arr.push(2);
-			callLater(function () {
+			callLate(function () {
 				arr.push(3);
 			});
 		});

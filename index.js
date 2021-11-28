@@ -14,7 +14,7 @@
 		} else {
 			g = this
 		}
-		g.callLater = f()
+		g.callLate = f()
 	}
 })(function () {
 	var len = 0;

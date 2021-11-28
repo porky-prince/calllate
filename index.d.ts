@@ -1,3 +1,3 @@
-declare function callLater(cb: Function): void;
+declare function callLate(cb: Function): void;
 
-export = callLater;
+export = callLate;

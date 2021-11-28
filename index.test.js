@@ -1,9 +1,9 @@
-const callLater = require('./index');
+const callLate = require('./index');
 
-describe('callLater test', () => {
+describe('callLate test', () => {
 	test('async', (done) => {
 		let i = 1;
-		callLater(() => {
+		callLate(() => {
 			i = 2;
 			done();
 		});
@@ -12,13 +12,13 @@ describe('callLater test', () => {
 
 	test('defer parallel', (done) => {
 		let arr = [];
-		callLater(() => {
+		callLate(() => {
 			arr.push(1);
 		});
-		callLater(() => {
+		callLate(() => {
 			arr.push(2);
 		});
-		callLater(() => {
+		callLate(() => {
 			arr.push(3);
 		});
 		expect(arr.length).toBe(0);
@@ -30,11 +30,11 @@ describe('callLater test', () => {
 
 	test('defer serial', (done) => {
 		let arr = [];
-		callLater(() => {
+		callLate(() => {
 			arr.push(0);
-			callLater(() => {
+			callLate(() => {
 				arr.push(2);
-				callLater(() => {
+				callLate(() => {
 					arr.push(3);
 				});
 			});
