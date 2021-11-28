@@ -1,6 +1,6 @@
 {
 	"name": "calllater",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Defer a task to execute it asynchronously.",
 	"keywords": [
 		"nexttick",
