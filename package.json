@@ -1,0 +1,28 @@
+{
+	"name": "call-later",
+	"version": "1.0.0",
+	"description": "Defer a task to execute it asynchronously.",
+	"keywords": [
+		"nexttick",
+		"async",
+		"defer",
+		"microtask"
+	],
+	"author": "Porky Ke",
+	"license": "MIT",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"scripts": {
+		"test": "jest index.test.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"jest": "^27.3.1"
+	},
+	"repository": "https://github.com/porky-prince/call-later.git",
+	"homepage": "https://github.com/porky-prince/call-later#readme",
+	"bugs": "https://github.com/porky-prince/call-later/issues"
+}

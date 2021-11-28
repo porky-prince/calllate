@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>call-later</title>
+</head>
+<body>
+<script>
+	console.log(window.navigator.userAgent);
+</script>
+<script src="index.js"></script>
+<script src="browser.test.js"></script>
+<script>
+	if (typeof Worker === 'function') {
+		setTimeout(function () {
+			new Worker('browser.test.js');
+		}, 400);
+	}
+</script>
+</body>
+</html>
